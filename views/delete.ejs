@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Delete Chat </title>
+    <link rel="stylesheet" href="/style.css">
+    
+</head>
+<body>
+
+
+
+     <p>you are trying to delete this chat ID:<b><%= chats.id %></b></p>
+     <div class="box">
+            <div class="chat">
+                <p>From:<%=chats.from%></p>
+                <div class="msg">
+                    <p><%=chats.msg%></p>
+                </div>
+               
+                <p>Recived By:<%=chats.to%></p>
+                <hr>
+                <p><%=chats.created_at.toString().split(" ")[4]%>  </p>
+                <p><%=chats.created_at.toString().split(" ").slice(0 ,4).join("-")%></p>
+
+                <div class="btn">
+                    <form  method="post" action="/chat/<%= chats.id%>?_method=DELETE">
+                        <button id="dlt" class="">Delete</button>
+                    </form>
+                </div>
+               
+            </div>
+    </div>
+    
+    <script src="/app.js"></script>
+</body>
+</html>

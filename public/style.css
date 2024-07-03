@@ -1,0 +1,43 @@
+body{
+    margin: 20px;
+}
+.box{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+   
+}
+
+.chat{
+    background-color: aliceblue;
+    padding: 1rem;
+    border-radius: 1rem;
+    width: 15rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+
+}
+
+.msg{
+    background-color: dodgerblue;
+    padding: 1rem 2rem;
+    border-radius: 1rem;
+    color: white;
+    font-weight: 600;
+
+    
+}
+.chat form button{
+    width: 5rem;
+    height: 1.75rem;
+    background-color: transparent;
+    border: 1px solid dodgerblue;
+    border-radius: 0.25rem;
+}
+.btn  {
+    display: flex;
+   
+}
+.btn form .edit{
+    margin-right: 1rem;
+}
